@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        //function declaration
+        //we can call the function before it is declared and after the declration
+
+        
+         kolli();
+        function kolli(){
+            console.log("Anvesh");
+        }
+
+        //function expression
+        //we can call the function only after it is declared
+        var kolli = function(){
+            console.log("Anvesh");
+        }
+       kolli();
+
+       //immediately invoked function expression
+         //we can call the function immediately after it is declared
+         //we can use this to avoid polluting the global scope
+         //the first set of paranthesies "(....)" contains the function declaration
+            //the second set of paranthesies "()" invokes the function
+            
+       (function(){
+           console.log("Anvesh");
+       })();
+    </script>
+    
+</body>
+</html>
